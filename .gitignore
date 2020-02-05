@@ -1,0 +1,14 @@
+.vs/
+packages/
+AirCheck.Core/obj/
+AirCheck.Core/bin/
+AirCheck.Droid/obj/
+AirCheck.Droid/bin/
+AirCheck.Tizen/obj/
+AirCheck.Tizen/bin/
+
+#user specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
