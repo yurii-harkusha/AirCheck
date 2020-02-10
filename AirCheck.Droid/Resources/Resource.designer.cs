@@ -6986,6 +6986,9 @@ namespace AirCheck.Droid
 			// aapt resource value: 0x7f08018d
 			public const int Animation_Design_BottomSheetDialog = 2131231117;
 			
+			// aapt resource value: 0x7f0801ae
+			public const int AppTheme = 2131231150;
+			
 			// aapt resource value: 0x7f0800c8
 			public const int Base_AlertDialog_AppCompat = 2131230920;
 			
