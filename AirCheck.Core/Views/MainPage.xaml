@@ -2,12 +2,81 @@
 <c:CirclePage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:c="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
-             x:Class="AirCheck.Core.Views.MainPage">
+             x:Class="AirCheck.Core.Views.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
+             RotaryFocusObject="{x:Reference RootScrollView}">
     <c:CirclePage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-          VerticalOptions="CenterAndExpand"
-          HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <c:CircleScrollView
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <c:CircleStackLayout
+                x:Name="RootScrollView"
+                Orientation="Vertical"
+                Spacing="0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <c:CircleStackLayout.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="Tizen" Value="20,30,20,30"/>
+                        <On Platform="Android" Value="0,15,20,20"/>
+                    </OnPlatform>
+                </c:CircleStackLayout.Margin>
+                <StackLayout
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     Orientation="Vertical"
+                     Spacing="0">
+                    <StackLayout.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="Tizen" Value="0,30,0,0"/>
+                            <On Platform="Android" Value="0,15,0,0"/>
+                        </OnPlatform>
+                    </StackLayout.Margin>
+                    <Label
+                        FontSize="Small"
+                        Text="Let's check your air quality!"
+                        VerticalOptions="FillAndExpand"
+                        MaxLines="3"
+                        HorizontalOptions="FillAndExpand" 
+                        HorizontalTextAlignment="Center"
+                        TextColor="LightGray"/>
+                </StackLayout>
+                <c:PopupEntry
+                    PopupBackgroundColor="DarkSeaGreen"
+                    TextColor="LightGray"
+                    Margin="10,30,10,0"
+                    FontSize="Medium"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="City:"
+                    PlaceholderColor="LightGray"/>
+                <Button
+                    Margin="0,30,0,0"
+                    FontSize="Default"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    Text="Okay"
+                    TextColor="LightGray"
+                    BackgroundColor="DarkSeaGreen"/>
+                <Button
+                    Margin="0,30,0,0"
+                    FontSize="Default"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    Text="Okay"
+                    TextColor="LightGray"
+                    BackgroundColor="DarkSeaGreen"/>
+                <Button
+                    Margin="0,30,0,0"
+                    FontSize="Default"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    Text="Okay"
+                    TextColor="LightGray"
+                    BackgroundColor="DarkSeaGreen"/>
+            </c:CircleStackLayout>
+        </c:CircleScrollView>
     </c:CirclePage.Content>
 </c:CirclePage>
