@@ -1,4 +1,4 @@
-﻿using AirCheck.Core.Views;
+﻿using AirCheck.Tizen.UI.Views;
 using Xamarin.Forms;
 
 namespace AirCheck.Tizen

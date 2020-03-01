@@ -1,4 +1,4 @@
-﻿using AirCheck.Core.Views;
+﻿using AirCheck.Droid.UI.Views;
 using Xamarin.Forms;
 
 namespace AirCheck.Droid

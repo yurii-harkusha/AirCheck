@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
-using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
 
 namespace AirCheck.Droid
 {

@@ -17,7 +17,7 @@
     <None Remove="res\**" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AirCheck.Core\AirCheck.Core.csproj" />
+    <ProjectReference Include="..\AirCheck.Tizen.UI\AirCheck.Tizen.UI.csproj" />
   </ItemGroup>
 
 </Project>
