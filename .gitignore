@@ -2,8 +2,12 @@
 packages/
 AirCheck.Core/obj/
 AirCheck.Core/bin/
+AirCheck.Droid.UI/obj/
+AirCheck.Droid.UI/bin/
 AirCheck.Droid/obj/
 AirCheck.Droid/bin/
+AirCheck.Tizen.UI/obj/
+AirCheck.Tizen.UI/bin/
 AirCheck.Tizen/obj/
 AirCheck.Tizen/bin/
 
