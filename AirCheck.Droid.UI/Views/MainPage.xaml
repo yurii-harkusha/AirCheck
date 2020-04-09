@@ -39,7 +39,8 @@
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="CenterAndExpand" 
                     Text="Okay"
-                    TextColor="Black"/>
+                    TextColor="Black"
+                    Command="{Binding GetAirInfoByIpCommand}"/>
                 <Button
                     Margin="10,10,10,0"
                     FontSize="Default"

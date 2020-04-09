@@ -43,13 +43,14 @@
                     HorizontalOptions="CenterAndExpand" 
                     Text="Okay"
                     TextColor="LightGray"
-                    BackgroundColor="DarkSeaGreen"/>
+                    BackgroundColor="DarkSeaGreen"
+                    Command="{Binding GetAirInfoByIpCommand}"/>
                 <Button
                     Margin="0,30,0,0"
                     FontSize="Default"
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="CenterAndExpand" 
-                    Text="Okay"
+                    Text="Test test test!"
                     TextColor="LightGray"
                     BackgroundColor="DarkSeaGreen"/>
                 <Button
@@ -57,7 +58,7 @@
                     FontSize="Default"
                     VerticalOptions="StartAndExpand"
                     HorizontalOptions="CenterAndExpand" 
-                    Text="Okay"
+                    Text="Test it once again!"
                     TextColor="LightGray"
                     BackgroundColor="DarkSeaGreen"/>
             </c:CircleStackLayout>
