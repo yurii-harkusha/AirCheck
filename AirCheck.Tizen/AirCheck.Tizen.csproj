@@ -17,7 +17,14 @@
     <None Remove="res\**" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AirCheck.Tizen.UI\AirCheck.Tizen.UI.csproj" />
+    <None Remove="Views\MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Tizen.Wearable.CircularUI" Version="1.4.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AirCheck.Core\AirCheck.Core.csproj" />
   </ItemGroup>
 
 </Project>

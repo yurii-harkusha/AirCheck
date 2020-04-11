@@ -1,4 +1,5 @@
-﻿using AirCheck.Core.ViewModels;
+﻿using AirCheck.Core;
+using AirCheck.Core.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

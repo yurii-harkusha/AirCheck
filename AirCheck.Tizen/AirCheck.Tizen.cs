@@ -8,16 +8,15 @@ namespace AirCheck.Tizen
         protected override void OnCreate()
         {
             base.OnCreate();
-
             LoadApplication(new App());
         }
 
         static void Main(string[] args)
         {
-            var app = new Program();
-            Forms.Init(app);
+            var program = new Program();
+            Forms.Init(program);
             FormsCircularUI.Init();
-            app.Run(args);
+            program.Run(args);
         }
     }
 }

@@ -57,6 +57,10 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DeviceLocationService.cs" />
+    <Compile Include="Views\AppPage.xaml.cs">
+      <DependentUpon>AppPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -107,6 +111,9 @@
     <PackageReference Include="Xamarin.Android.Support.Interpolator" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.Percent" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Wear" Version="2.2.0" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>4.5.0.617</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml">
@@ -115,10 +122,15 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AirCheck.Droid.UI\AirCheck.Droid.UI.csproj">
-      <Project>{4a5b4bcd-90ab-43db-9226-01127680817c}</Project>
-      <Name>AirCheck.Droid.UI</Name>
+    <ProjectReference Include="..\AirCheck.Core\AirCheck.Core.csproj">
+      <Project>{1A2E3F3C-8A0F-482F-A085-D0FAFDC4EDC5}</Project>
+      <Name>AirCheck.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AppPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

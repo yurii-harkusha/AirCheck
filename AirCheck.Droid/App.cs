@@ -1,4 +1,4 @@
-﻿using AirCheck.Droid.UI.Views;
+﻿using AirCheck.Droid.Views;
 using Xamarin.Forms;
 
 namespace AirCheck.Droid
@@ -7,7 +7,12 @@ namespace AirCheck.Droid
     {
         public App()
         {
-            MainPage = new MainPage();
+            MainPage = new AppPage();
+        }
+
+        public void RegisterTypes()
+        {
+            //RegisterType<IDeviceLocationService, DeviceLocationService>();
         }
     }
 }

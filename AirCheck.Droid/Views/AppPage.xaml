@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirCheck.Droid.Views.AppPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <ScrollView
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                x:Name="RootScrollView"
+                Orientation="Vertical"
+                Spacing="0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Padding="20,35,20,60">
+                <Label
+                    FontSize="Small"
+                    Text="Let's check your air quality!"
+                    VerticalOptions="FillAndExpand"
+                    MaxLines="3"
+                    HorizontalOptions="CenterAndExpand" 
+                    HorizontalTextAlignment="Center"
+                    TextColor="LightGray"/>
+                <Entry
+                    Margin="30,10,30,0"
+                    FontSize="Medium"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="City:"
+                    PlaceholderColor="LightGray"
+                    TextColor="White"
+                    BackgroundColor="DarkGray"/>
+                <Button
+                    Margin="10,10,10,0"
+                    FontSize="Default"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    Text="Okay"
+                    TextColor="Black"
+                    Command="{Binding GetAirInfoByIpCommand}"/>
+                <Button
+                    Margin="10,10,10,0"
+                    FontSize="Default"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    Text="Test test test!"
+                    TextColor="Black"/>
+                <Button
+                    Margin="10,10,10,0"
+                    FontSize="Default"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    Text="Test it once again!"
+                    TextColor="Black"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

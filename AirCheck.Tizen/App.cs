@@ -1,4 +1,4 @@
-﻿using AirCheck.Tizen.UI.Views;
+﻿using AirCheck.Tizen.Views;
 using Xamarin.Forms;
 
 namespace AirCheck.Tizen
@@ -7,7 +7,7 @@ namespace AirCheck.Tizen
     {
         public App()
         {
-            MainPage = new MainPage();
+            MainPage = new AppPage();
         }
     }
 }
